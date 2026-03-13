@@ -86,4 +86,4 @@ export function extractThinking(text: string): ExtractThinkingResult {
  *
  * 与 cursor2api-go 的 thinkingHint 保持一致
  */
-export const THINKING_HINT = `You may use <thinking>...</thinking> tags for brief internal reasoning (2-3 sentences max). Do NOT use thinking for lengthy analysis — keep it short to preserve output space for actual content and tool calls.`;
+export const THINKING_HINT = `You may use <thinking>...</thinking> for brief private reasoning. HARD LIMITS: max 3 lines, max 120 words. Do NOT write code, full solutions, or long analysis inside thinking. Never repeat thinking content in the final response.`;
